@@ -1,0 +1,74 @@
+body{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  background-color: antiquewhite;
+  
+}
+
+.range_box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50%;
+  /* background-color: #c9c9c9; */
+  border-radius: 40px;
+}
+
+.range {
+  width: 500px;
+  height: 15px;
+  appearance: none;
+  background: #edf1f4;
+  outline: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.range::-webkit-slider-thumb {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #022f52;
+  box-shadow: -407px 0 0 400px #022f52;
+  opacity: .7;
+  cursor: pointer;
+}
+
+#rangeValue {
+  position: relative;
+  text-align: center;
+  width: 60px;
+  font-size: 1.25em;
+  color: #fff;
+  background: #022f52;
+  margin-left: 15px;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+option {
+  font-weight: bolder;
+  display: block;
+  white-space: nowrap;
+  min-height: 20px;
+  padding: 10px;
+}
+
+input[type="range" i] {
+  appearance: auto;
+  cursor: default;
+  color: -internal-light-dark(rgb(16, 16, 16), rgb(255, 255, 255));
+  padding: initial;
+  border: initial;
+}
+
+#rangeList {
+  color: black;
+  padding: 50px;
+}
